@@ -1,0 +1,175 @@
+let numbers = [[1,2,0,0], [1,0,0,0], [0,2,0,2], [2,2,2,2]];
+
+const clickRight = () => {
+    for (let i = 0; i < numbers.length; i++) {
+        for (let j = numbers[i].length - numbers.length; j >= 0; j--) {
+            if (numbers[i][j] === 0) {
+                numbers[i].splice([j], 3)
+                numbers[i].unshift(0,0)
+                return numbers
+            }
+        }
+    }
+    // } render();
+}
+clickRight();
+
+// const clickRight = () => {
+//     for (let i = 0; i < numbers.length; i++) {
+//         for (let j = numbers[i].length - 3; j >= 0; j--) {
+//             if (numbers[i][j] === 0) {
+//                 numbers[i].splice([j], 3)
+//                 numbers[i].unshift(0, 0, 0)
+//                 return numbers
+//             }
+//         }
+//     }
+//     // } render();
+// }
+// clickRight();
+
+const clickRight = () => {
+    for (let i = 0; i < numbers.length; i++) {
+        for (let j = numbers[i].length - 1; j >= 0; j--) {
+            if (numbers[2][2] === 0) {
+                numbers[2].splice(2, 1)
+                numbers[2].unshift(0)
+                return numbers
+            }
+        }
+    }
+    // } render();
+}
+clickRight();
+
+
+const clickUp = () => {
+    for (let i = 0; i < array.length - 1 ; i++) {
+        for (let j = 0; j < array[i].length; j++) {
+            if (array[i][j] === 0) {
+                array[i][j] = array[i + 1][j]
+                
+                array[i + 1][j] = 0
+            }
+        }
+        // console.log(array)
+    } render();
+}
+// clickUp();
+
+
+
+
+
+
+
+
+
+
+
+
+
+// player pushes right
+// start from backward
+//// if i - 1 === i - 2
+// combine value
+// into last array
+// const clickRight = () => {
+//     for (let i = 0; i < array[0].length; i++) {
+//         if (array[0][3] === array [0][2]){
+//             array [0][3] = array[0][3] + array[0][2]
+//             console.log(`working sum ${array[0][3]}`)
+//         } else if (array[0][2] === array[0][1]){
+
+//         // if (array[0].includes(2)) {
+//         //     console.log(`added new tile in array ${array[i]}`)
+//         //     return placeInRandomTiles();
+//         // } else if (array[0] !== (2)) {
+//         //     console.log(`added new tile anyways in ${array[i]}`)
+//         //     return placeInRandomTiles();
+//         }
+//     }render();
+// }
+// clickRight();
+
+
+
+
+.grid-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-top: 10px solid #BAADA0;
+    border-bottom: 10px solid #BAADA0;
+    border-left: 7px solid #BAADA0;
+    border-right: 7px solid #BAADA0;
+    border-radius: 5px;
+}
+
+.grid-row {
+    display: flex;
+    width: 433px;
+    height: 106.25px;
+    border: 10px solid #BAADA0;
+    margin: 0;
+}
+
+
+.grid-cell {
+    width: 106.25px;
+    height: 106.25px;
+    margin: 0;
+    border: 3px solid #BAADA0;
+    justify-content: space-around;
+    background-color: #CCC1B4;
+    display: inline-block;
+    border-radius: 3px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.instructions2 p {
+    margin: 5px;
+    visibility: hidden;
+    /* animation: text-blur-out 0.6s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-blur-out 0.6s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    transition-property: animation;
+    transition-timing-function: 0.6s;
+    transition-timing-function: cubic-bezier(0.550, 0.085, 0.680, 0.530) both */
+}
+
+.instructions2 p {
+    visibility: hidden;
+    /* opacity: 0; */
+    /* transition: visibility 0.3s linear, opacity 0.3s linear; */
+    animation: text-focus-in 0.6s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #776e65;
+}
+
+.instructions2:hover p {
+    visibility: visible;
+    animation: text-focus-in 0.6s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 0.6s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+/* .instructions:hover > .instructions2 {
+    visibility: visible;
+    opacity: 1;
+} */
