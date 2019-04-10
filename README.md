@@ -32,4 +32,4 @@ Sky Yoo, SEI GA LA
 
 ### Acknowledgements
 
-This game is originally created by [Gabriele Cirulli] (https://play2048.co/).
+This game is originally created by [Gabriele Cirulli](https://play2048.co/).
