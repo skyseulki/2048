@@ -4,6 +4,10 @@
 This game is a rendition of the ever so favorite single-player mobile game.
 
 
+### Play Game
+[Click to play!](https://skyseulki.github.io/2048/)
+
+
 ### Instructions for Gameplay
 
 
@@ -11,18 +15,16 @@ The objective of the game is to move the tiles, using the arrow keys, and combin
 
 
 #### Screenshot
-![wireframe](images/0002.jpg)
+![wireframe](images/0003.png)
 
 
 ### User Story
 When the page loads, the user will see the game title, "2048", along with a play button below it. User clicks the button, and the page will load a new page, which includes the game board and an instructions button. As the user hovers over the 'How to Play' button,' there will be a brief instruction on how to able. Whether the user reaches the end goal of getting the tile to be 2048, or the user is out of moves, a dialogue will appear on the bottom of the game board. The message will state whether the user won or lost the game.
 
-
-### Play Game
-[Click to play!](https://skyseulki.github.io/2048/)
-
 ### Built With
-- HTML/CSS/Javascript
+- HTML
+- Javascript
+- CSS
 - [jQuery](https://jquery.com/)
 - [Animista](http://animista.net/)
 
