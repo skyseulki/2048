@@ -11,7 +11,7 @@ The objective of the game is to move the tiles, using the arrow keys, and combin
 
 
 #### Screenshot
-![wireframe](images/0003.png)
+![wireframe](images/0002.jpg)
 
 
 ### User Story
